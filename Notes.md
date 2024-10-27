@@ -210,3 +210,10 @@ This method is best suited for situations where the number of predictors is rela
 
 ## Support Linear Regeression
 
+
+
+## Computer Vision
+
+- Template Matching: looking for an exact copy of an image in another image 
+- 
+

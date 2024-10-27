@@ -83,7 +83,8 @@ This ensures that both [`X_train`]and [`X_test`] are scaled consistently without
 ### Ordinary Least Squares
 
 if we have y = b0 + b1x
-we want to have b0 and b1 such that sum[(yi -y)^2] is minimized
+we want to have b0 and b1 such that sum[(yi -y)^2] is 
+minimized this is called `Oridinary Least Squares`. 
 
 ### Statistical Significance
 
@@ -205,4 +206,7 @@ The **All Possible Models** approach is a comprehensive method for selecting the
 
 This method is best suited for situations where the number of predictors is relatively small, allowing for a thorough evaluation of all possible models.
 
-> You don't need to use this filtering methods 
+> You don't need to use this filtering methods libraries  implement them 
+
+## Support Linear Regeression
+

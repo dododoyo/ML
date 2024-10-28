@@ -226,3 +226,21 @@ This method is best suited for situations where the number of predictors is rela
 3. **Algorithm Requirements**: Many edge detection algorithms, such as the Canny edge detector or the Sobel operator, are designed to work on single-channel images. These algorithms compute gradients or intensity changes, which are more straightforward to calculate on grayscale images.
 
 4. **Focus on Intensity Changes**: Edges in images are characterized by significant changes in intensity. Grayscale images represent intensity variations directly, making it easier for edge detection algorithms to identify these changes.
+
+
+Contour detection in computer vision is a technique used to identify and extract the boundaries or outlines of objects within an image. Contours are curves that join all the continuous points along a boundary that have the same color or intensity. This technique is widely used in image analysis and computer vision tasks such as object detection, shape analysis, and image segmentation.
+
+### Contour Detection
+
+1. **Binary Image**: Contour detection typically requires a binary image, where the objects of interest are represented by white pixels (value 255) and the background is represented by black pixels (value 0). This binary image is often obtained through thresholding or edge detection techniques.
+
+2. **Hierarchy**: Contours can be nested within each other, forming a hierarchy. For example, a contour of a hole inside an object is a child of the contour of the object.
+
+3. **Contour Approximation**: Contours can be approximated to reduce the number of points in the contour representation. This is useful for simplifying the contour and reducing computational complexity.
+
+### Steps for Contour Detection
+
+1. **Convert to Grayscale**: If the input image is in color, it is first converted to a grayscale image.
+2. **Apply Thresholding or Edge Detection**: Convert the grayscale image to a binary image using thresholding or edge detection (e.g., Canny edge detector).
+3. **Find Contours**: Use a contour detection algorithm to find the contours in the binary image.
+

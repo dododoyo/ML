@@ -215,5 +215,14 @@ This method is best suited for situations where the number of predictors is rela
 ## Computer Vision
 
 - Template Matching: looking for an exact copy of an image in another image 
-- 
 
+
+> Converting images to grayscale before detecting edges is a common preprocessing step in computer vision for several reasons:
+
+1. **Simplification**: Grayscale images have only one channel (intensity) compared to three channels (red, green, blue) in color images. This simplification reduces the computational complexity and memory usage, making edge detection algorithms faster and more efficient.
+
+2. **Noise Reduction**: Color images can introduce noise due to variations in color channels. Converting to grayscale helps in reducing this noise, leading to more accurate edge detection.
+
+3. **Algorithm Requirements**: Many edge detection algorithms, such as the Canny edge detector or the Sobel operator, are designed to work on single-channel images. These algorithms compute gradients or intensity changes, which are more straightforward to calculate on grayscale images.
+
+4. **Focus on Intensity Changes**: Edges in images are characterized by significant changes in intensity. Grayscale images represent intensity variations directly, making it easier for edge detection algorithms to identify these changes.

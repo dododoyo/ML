@@ -1,4 +1,7 @@
 .vscode
-/data
+/datas
+/tesstrain
+/image-ai
+/helpers
 .venv
 *.csv
